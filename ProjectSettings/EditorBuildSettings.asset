@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Gasstation.unity
+    guid: c122f3523aec9ed4ca73201edf78a620
+  - enabled: 1
+    path: Assets/Scenes/Gasstation_outside.unity
+    guid: ab2ff606e50016a4d942d1ab7a086163
   m_configObjects: {}
