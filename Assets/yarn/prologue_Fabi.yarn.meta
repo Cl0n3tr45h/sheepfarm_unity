@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 69b418c66aee4fe4f9c018f45f1cf6e9
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - prologue_Fabi-Fabi.Start-0
+  - prologue_Fabi-Fabi.Start-1
+  - prologue_Fabi-Fabi.Start-2
+  - prologue_Fabi-Fabi.Start-3
+  - prologue_Fabi-Fabi.Start-4
+  - prologue_Fabi-Fabi.Start-5
+  - prologue_Fabi-Fabi.Start-6
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: "Error on line 6 at position 9:\nmismatched input 'm'
+    expecting COMMAND_IF\r\nFabi: <<mood flirting>> So there I was; stuck in the
+    window- in my hand *still* the burning-- <<mood surprised>> \r\n        ^"
+  baseLanguage: {fileID: 7128917941130120860, guid: 69b418c66aee4fe4f9c018f45f1cf6e9,
+    type: 3}
+  localizations: []

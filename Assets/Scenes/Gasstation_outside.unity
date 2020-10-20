@@ -121,6 +121,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &124358996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124358998}
+  - component: {fileID: 124358997}
+  m_Layer: 0
+  m_Name: LevelEntryFromShop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &124358997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124358996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f715e93c8f9b3bf458914e9e38ef82b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceTag: shop
+--- !u!4 &124358998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124358996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.3, y: 0.18, z: -39.011917}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &596602179
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +302,7 @@ PrefabInstance:
     - target: {fileID: 7859335270195382924, guid: df1ef28a7c615324b93874bc6f91021e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.782732
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: 7859335270195382924, guid: df1ef28a7c615324b93874bc6f91021e,
         type: 3}
@@ -304,6 +348,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859335270195382927, guid: df1ef28a7c615324b93874bc6f91021e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859335270195382927, guid: df1ef28a7c615324b93874bc6f91021e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859335270195382927, guid: df1ef28a7c615324b93874bc6f91021e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859335270195382927, guid: df1ef28a7c615324b93874bc6f91021e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df1ef28a7c615324b93874bc6f91021e, type: 3}
@@ -400,6 +464,21 @@ PrefabInstance:
       propertyPath: nextScene
       value: Gasstation
       objectReference: {fileID: 0}
+    - target: {fileID: 7638282896078395983, guid: 4688002a671dd7c43826c7556434d5b6,
+        type: 3}
+      propertyPath: entryTag
+      value: outside
+      objectReference: {fileID: 0}
+    - target: {fileID: 7638282896078395983, guid: 4688002a671dd7c43826c7556434d5b6,
+        type: 3}
+      propertyPath: transitionTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7638282896078395983, guid: 4688002a671dd7c43826c7556434d5b6,
+        type: 3}
+      propertyPath: sourceTag
+      value: outside
+      objectReference: {fileID: 0}
     - target: {fileID: 8617285311495151624, guid: 4688002a671dd7c43826c7556434d5b6,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -428,7 +507,12 @@ PrefabInstance:
     - target: {fileID: 8617285311515058741, guid: 4688002a671dd7c43826c7556434d5b6,
         type: 3}
       propertyPath: m_Name
-      value: LevelLoader
+      value: LevelExitToShop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617285311515058741, guid: 4688002a671dd7c43826c7556434d5b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8617285311515058743, guid: 4688002a671dd7c43826c7556434d5b6,
         type: 3}

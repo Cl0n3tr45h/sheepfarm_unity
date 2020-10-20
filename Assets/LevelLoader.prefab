@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8617285311515058743
 Transform:
   m_ObjectHideFlags: 0
@@ -190,10 +190,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979b46fcf4b25c249a8d2986c773d27c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider: {fileID: 8617285311515058740}
   transition: {fileID: 8617285311495151627}
   nextScene: Gasstation_outside
   transitionTime: 1
+  sourceTag: shop
 --- !u!1 &8617285312990979439
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,16 +5,26 @@ using UnityEngine;
 public class Player : MonoBehaviour {
     public float moveSpeed = 4f;
     public Transform movePoint; //Point to where the player WILL move
+    public static Player instance;
+    public static bool isActive = true;
 
     public LayerMask whatStopsMovement;
 
+    public static bool IsActive =true;
+
     // Start is called before the first frame update
-    void Start () {
+    void Awake () {
+        isActive = true;
+        instance = this;
         movePoint.parent = null; //to ensure independent movement but keep it nice and orlderly in the project view
     }
 
     // Update is called once per frame
     void Update () {
+
+        if(!IsActive){
+            return;
+        }
 
         checkMovement();
         
@@ -40,5 +50,14 @@ public class Player : MonoBehaviour {
                 }
             }
         }
+    }
+
+     public void OnDialogueEnd(){
+        isActive = true;
+    }
+
+    public void teleport(Vector3 targetPosition){
+        transform.position = targetPosition;
+        movePoint.position = targetPosition;
     }
 }

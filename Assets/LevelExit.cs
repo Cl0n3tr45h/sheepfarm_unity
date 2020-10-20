@@ -3,22 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelLoader : MonoBehaviour {
+public class LevelExit : MonoBehaviour {
     public Animator transition;
     public string nextScene;
     public float transitionTime = 1f;
+    public string sourceTag;
 
     void OnTriggerEnter2D (Collider2D collider) {
-            Debug.Log("Entered");
+           if(collider.CompareTag("Player")){
             LoadNextLevel ();
+           }
     }
 
     public void LoadNextLevel () {
         StartCoroutine (LoadLevel ());
+        Player.IsActive = true;
     }
 
     IEnumerator LoadLevel () {
+        LevelEntry.activeTag = sourceTag;
         transition.SetTrigger ("start");
+        Player.IsActive = false;
         yield return new WaitForSeconds (transitionTime);
         SceneManager.LoadScene (nextScene);
     }
