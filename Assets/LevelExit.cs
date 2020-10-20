@@ -22,7 +22,7 @@ public class LevelExit : MonoBehaviour {
 
     IEnumerator LoadLevel () {
         LevelEntry.activeTag = sourceTag;
-        transition.SetTrigger ("start");
+        transition.SetTrigger ("Start");
         Player.IsActive = false;
         yield return new WaitForSeconds (transitionTime);
         SceneManager.LoadScene (nextScene);
